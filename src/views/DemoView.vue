@@ -41,6 +41,7 @@ export default {
 
     additionMethod() {
       store.commit(ACTIONS.INCREMENT)
+      // store.dispatch(ACTIONS.INCREMENT)
     },
 
     decrementMethod() {

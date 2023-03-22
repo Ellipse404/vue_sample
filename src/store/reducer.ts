@@ -1,16 +1,14 @@
-const initialState = 0
-
-export default function appReducer(state = initialState, action: any) {
+export default function appReducer(state: any, action: string) {
   switch (action) {
     case 'increment': {
-      return state++
+      return state.count++
     }
 
     case 'decrement': {
-      return state--
+      return state.count--
     }
 
     default:
-      return state
+      return state.count
   }
 }
